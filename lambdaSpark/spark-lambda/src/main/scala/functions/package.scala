@@ -4,9 +4,7 @@ import org.apache.spark.rdd.RDD
 import org.apache.spark.streaming.State
 import org.apache.spark.streaming.kafka.HasOffsetRanges
 
-/**
-  * Created by Ahmad Alkilani on 6/18/2016.
-  */
+
 package object functions {
   def rddToRDDActivity(input: RDD[(String, String)]) = {
     val offsetRanges = input.asInstanceOf[HasOffsetRanges].offsetRanges
