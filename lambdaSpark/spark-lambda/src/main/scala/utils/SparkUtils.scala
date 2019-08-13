@@ -6,9 +6,7 @@ import org.apache.spark.sql.SQLContext
 import org.apache.spark.streaming.{StreamingContext, Duration}
 import org.apache.spark.{SparkContext, SparkConf}
 
-/**
-  * Created by Ahmad Alkilani on 5/30/2016.
-  */
+
 object SparkUtils {
   val isIDE = {
     ManagementFactory.getRuntimeMXBean.getInputArguments.toString.contains("IntelliJ IDEA")
